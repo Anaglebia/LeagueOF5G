@@ -1,16 +1,13 @@
-import './App.css';
-import Cadastro from './Components/Cadastro/Cadastro';
 
+import './App.css'
 
 function App() {
-  
-
   return (
-    <> 
+    <>
+      
      <h1>Agendamento</h1>
-     <Cadastro/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
