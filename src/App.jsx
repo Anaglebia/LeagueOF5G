@@ -1,16 +1,30 @@
+import { createGlobalStyle } from "styled-components";
+
+import { Outlet } from "react-router-dom";
+
+import Navbar from '../src/Components/Navbar/Navbar'
+import Footer from '../src/Components/Footer/Footer'
+// import Login from "./Components/Login/Login";
+// import Footer from "./Components/Footer/Footer";
 
 
-import './App.css'
+const GlobalStyle = createGlobalStyle`
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  };
+`;
 
 function App() {
-  
-
   return (
     <>
-      
-     <h1>Agendamento</h1>
+      <GlobalStyle />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
