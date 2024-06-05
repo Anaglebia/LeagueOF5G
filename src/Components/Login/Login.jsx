@@ -1,15 +1,12 @@
 
-import './App.css'
-
-function Login() {
+function Cadastro() {
   
-
   return (
     <>
-      
-     <h1>Agendamento</h1>
+     <h1>Login</h1>
+     
     </>
   )
 }
 
-export default Login
+export default Cadastro
