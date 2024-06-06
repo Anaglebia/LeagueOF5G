@@ -1,13 +1,20 @@
+import Cadastro from "./Components/Cadastro/Cadastro";
+// import Dashboard from "./Components/Dashboard/Dashboard";
 
-import './App.css'
 
 function App() {
   return (
     <>
-      
-     <h1>Agendamento</h1>
+    <div>
+    <h1>Agendamento</h1>
+    <Cadastro/>
+    {/* <Dashboard/> */}
+
+    </div>
     </>
   );
 }
 
 export default App;
+
+
