@@ -5,43 +5,49 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/clerk-react";
+import Imagem from '../Navbar/logo.svg';
 
 import * as S from "./Style";
+import { FaHome, FaUserPlus, FaInfo, FaPhone, FaStethoscope, FaCalendarCheck } from 'react-icons/fa'; // Exemplo de importação de ícones
 
 const Navbar = () => {
   return (
     <S.Nav>
-      <Link to="/">
-        <img src="/src/Components/Navbar/logo.svg" alt="" />
-      </Link>
       <ul>
+        <SignedOut>
+          <li>
+            <SignInButton />
+          </li>
+        </SignedOut>
         <li>
-          <Link to="/">Home</Link>
-        </li>
+            <UserButton />
+          </li>
         <li>
-          <Link to="/cadastro">Cadastro</Link>
+          <Link to="/"><FaHome /> Home</Link>
         </li>
-
+        
         <SignedIn>
           <li>
-            <Link to="/#">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/#">Contato</Link>
-          </li>
-          <li>
-            <Link to="/#"> Portal do Paciente</Link>
+            <Link to="/cadastro"><FaStethoscope /> Portal do Paciente</Link>
           </li>
 
           <li>
-            <Link to="consultas">Consultas</Link>
+            <Link to="consultas"><FaCalendarCheck /> Consultas</Link>
           </li>
-          <UserButton />
+         
+          <li>
+            <Link to="/#"><FaInfo /> Sobre</Link>
+          </li>
+          
+          <li>
+            <Link to="/#"><FaPhone /> Contato</Link>
+          </li>
+          
+         
         </SignedIn>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
       </ul>
+
+      <img src={Imagem} alt="logo" className="nav-logo" />
     </S.Nav>
   );
 };

@@ -7,7 +7,7 @@ const Home = () => {
     <S.Main>
       <S.GlassContainer>
         <h1>Bem Vindo</h1> 
-        <img src="imagem.png" alt="Imagem da Home" /> 
+        <img src="homee.png" alt="Imagem da Home" /> 
       </S.GlassContainer>
     </S.Main>
   );
