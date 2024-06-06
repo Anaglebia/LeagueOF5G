@@ -17,6 +17,9 @@ export const Nav = styled.nav`
   align-items: flex-start;
   z-index: 1000; */
 
+
+  border: solid red;
+
   img {
     width: 90%;
     margin-top: auto;
