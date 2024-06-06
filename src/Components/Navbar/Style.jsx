@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  border: solid red;
+  /* border: solid red; */
   width: 100%;
-  height: 8vh;
+  height: 10vh;
 
   display: flex;
   align-items: center;
@@ -14,8 +14,8 @@ export const Nav = styled.nav`
   }
 
   ul {
-    border: solid green;
-    width: 30%;
+    /* border: solid green; */
+    width: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

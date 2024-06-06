@@ -1,9 +1,10 @@
+import * as S from "./Style";
 
 const Home = () => {
   return (
-    <div>
+    <S.Main>
       <h1>Bem Vindo</h1>
-    </div>
+    </S.Main>
   );
 };
 
