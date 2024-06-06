@@ -5,16 +5,17 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(23,18,70,1) 16%, rgba(83,106,173,1) 40%, rgba(118,198,214,1) 65%);
+ background: #dbeaf2;
   font-family: Arial, sans-serif;
   position: relative;
-   padding: 0;
+   padding-left:20%;
     margin: 0;
 
   h1 {
-    font-size: 2em;
-    color: white;
+    font-size: 2.5em;
+    color: #2E14A2;
     text-align: center;
+    padding-top: 70px;
   }
 
   &::before {
@@ -36,9 +37,9 @@ export const GlassContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 80%;
-  padding: 20px;
+  width: 60%;
+  height: 70%;
+ 
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -51,4 +52,6 @@ export const GlassContainer = styled.div`
     max-width: 50vw;
     border-radius: 10px;
   }
+
+  
 `;
