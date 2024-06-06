@@ -19,6 +19,7 @@ const Login = () => {
     }
   };
 
+<<<<<<< HEAD
   return (
     <div>
       <h2>Login</h2>
@@ -49,3 +50,18 @@ const Login = () => {
 }
 
 export default Login
+=======
+
+function Login() {
+
+  return (
+    <>
+      <h1>Login</h1>
+    </>
+  );
+}
+
+
+export default Login;
+
+>>>>>>> 251916a6b860caab4f8c905977896efa92538fc3

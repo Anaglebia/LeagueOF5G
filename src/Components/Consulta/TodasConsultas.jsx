@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import React from "react";
 
 const TodasConsultas = () => {
   const [consultas, setConsultas] = useState([]);

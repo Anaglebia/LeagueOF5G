@@ -8,6 +8,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
 // import Login from "./Components/Login/Login.jsx";
 import Home from "./Components/Home/Home.jsx";
+<<<<<<< HEAD
 import Cadastro from "./Components/Login/Login.jsx";
 import TodasConsultas from "./Components/Consulta/TodasConsultas.jsx";
 
@@ -17,6 +18,10 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
+=======
+import Cadastro from "./Components/Cadastro/Cadastro.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard.jsx";
+>>>>>>> 251916a6b860caab4f8c905977896efa92538fc3
 
 const router = createBrowserRouter([
   {
@@ -39,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/consultas",
         element: <TodasConsultas />,
+      },
+      {
+        path: "Dashboard/:id",
+        element: <Dashboard />,
       },
     ],
   },

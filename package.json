@@ -11,14 +11,21 @@
     "server": "json-server --watch db/db.json --port 8000"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@clerk/clerk-react": "^5.2.3",
+=======
+    "@hookform/resolvers": "^1.3.8",
+>>>>>>> 251916a6b860caab4f8c905977896efa92538fc3
     "axios": "^1.7.2",
     "hamburger-react": "^2.5.1",
     "json-server": "^1.0.0-beta.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.5",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
