@@ -8,6 +8,8 @@ export const Main = styled.main`
   background: linear-gradient(90deg, rgba(23,18,70,1) 16%, rgba(83,106,173,1) 40%, rgba(118,198,214,1) 65%);
   font-family: Arial, sans-serif;
   position: relative;
+   padding: 0;
+    margin: 0;
 
   h1 {
     font-size: 2em;
