@@ -9,7 +9,7 @@ const TodasConsultas = () => {
   useEffect(() => {
     const fetchConsultas = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/db/db.json");
+        const response = await axios.get("http://localhost:8000/consultas");
         setConsultas(response.data);
       } catch (error) {
         console.error(error);
