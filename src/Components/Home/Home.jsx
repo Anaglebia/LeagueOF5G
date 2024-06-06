@@ -12,3 +12,4 @@ const Home = () => {
     </S.Main>
   );
 };
+export default Home
