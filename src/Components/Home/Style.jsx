@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 
 export const Main = styled.main`
@@ -6,8 +5,9 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(23,18,70,1) 16%, rgba(83,106,173,1) 40%, rgba(118,198,214,1) 65%);;
+  background: linear-gradient(90deg, rgba(23,18,70,1) 16%, rgba(83,106,173,1) 40%, rgba(118,198,214,1) 65%);
   font-family: Arial, sans-serif;
+  position: relative;
 
   h1 {
     font-size: 2em;
@@ -45,7 +45,8 @@ export const GlassContainer = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   img {
-    width: 50vw;
-    
+    width: 100%;
+    max-width: 50vw;
+    border-radius: 10px;
   }
 `;

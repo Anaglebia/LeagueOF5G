@@ -1,21 +1,15 @@
-import { createGlobalStyle } from "styled-components";
+
 import { Outlet } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import GlobalStyles from "../GlobalStyles";
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  };
-`;
 
 function App() {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <Navbar />
       <Outlet />
       <Footer />
