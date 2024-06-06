@@ -8,8 +8,8 @@ export const Main = styled.main`
  background: #dbeaf2;
   font-family: Arial, sans-serif;
   position: relative;
-   padding-left:20%;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
   h1 {
     font-size: 2.5em;
