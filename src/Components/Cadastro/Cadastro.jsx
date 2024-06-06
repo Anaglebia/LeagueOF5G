@@ -7,8 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Cadastro() {
 
-  // const {register, handleSubmit, reset} = useForm({ 
-  // })
+
   const {
     register,
     handleSubmit, reset,
@@ -28,31 +27,28 @@ function Cadastro() {
      <h1>Cadastro</h1>
      <S.Div>
      <S.Form onSubmit={handleSubmit(Create)}>
-      <div>
-      <label>Primeiro nome <input type="text" id="nome" name="nome" {...register('nome')} /></label>
+    <div>
+    <S.Label>Primeiro nome </S.Label>
+      <S.Input className="w3-input" type="text" id="nome" name="nome" {...register('nome')} />
      {errors.nome && <p>Favor preencher o nome .</p>}
 
-     <label>Ultimo nome <input type="text" id="Unome" name="Unome" {...register('Unome')} /></label>
+     <S.Label>Ultimo nome <S.Input className="w3-input" type="text" id="Unome" name="Unome" {...register('Unome')} /></S.Label>
      {errors.unome && <p>Favor preencher o sobrenome .</p>}
 
-      </div>
-    <div>
-    <label>Email <input type="email" id="email" name="email" {...register('email')}/></label>
+    </div>
+      
+    <S.Label>Email <S.Input className="w3-input" type="email" id="email" name="email" {...register('email')}/></S.Label>
      {errors.unome && <p>O campo email e obrigatorio .</p>}
 
-     <label>Telefone <input type="tel" id="phone" name="phone" {...register('phone')}/></label>
+     <S.Label>Telefone <S.Input className="w3-input" type="tel" id="phone" name="phone" {...register('phone')}/></S.Label>
      {errors.unome && <p>O campo telefone e obrigatorio .</p>}
      
-     <label>Data de Nascimento<input type="date" id="dateNasc" name="dateNasc"{...register('dateNasc')} /></label>
+     <S.Label>Data de Nascimento<S.Input className="w3-input" type="date" id="dateNasc" name="dateNasc"{...register('dateNasc')} /></S.Label>
      {errors.unome && <p>Favor a data de nascimento corretamente .</p>}
-
-    </div>
      
-     <label>Idade<input type="number" id="idade" name="didade"{...register('idade')} /></label>
-
-     <label>Senha<input type="password" id="password" name="password" {...register('password')}/></label>
+     <S.Label>Senha<S.Input className="w3-input" type="password" id="password" name="password" {...register('password')}/></S.Label>
      
-        <button>Enviar </button>
+        <S.Button>Enviar</S.Button>
      </S.Form>
     </S.Div>
     </>
