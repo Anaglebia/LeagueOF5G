@@ -6,9 +6,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ClerkProvider } from "@clerk/clerk-react";
 
 import ErrorPage from "./Components/ErrorPage/ErrorPage.jsx";
-import Login from "./Components/Login/Login.jsx";
+// import Login from "./Components/Login/Login.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Cadastro from "./Components/Login/Login.jsx";
+import TodasConsultas from "./Components/Consulta/TodasConsultas.jsx";
 
 // Import your publishable key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -27,13 +28,17 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      // {
+      //   path: "/login",
+      //   element: <Login />,
+      // },
       {
-        path: "/login",
-        element: <Login />,
+        path: "/cadastro",
+        element: <Cadastro />,
       },
       {
-        path: "/Cadastro",
-        element: <Cadastro />,
+        path: "/consultas",
+        element: <TodasConsultas />,
       },
     ],
   },
