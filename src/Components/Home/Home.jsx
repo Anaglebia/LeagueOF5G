@@ -1,11 +1,14 @@
-import * as S from "./Style";
+import React from 'react';
+import * as S from './Style'; 
+
 
 const Home = () => {
   return (
     <S.Main>
-      <h1>Bem Vindo</h1>
+      <S.GlassContainer>
+        <h1>Bem Vindo</h1> 
+        <img src="imagem.png" alt="Imagem da Home" /> 
+      </S.GlassContainer>
     </S.Main>
   );
 };
-
-export default Home;
