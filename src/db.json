@@ -191,5 +191,14 @@
       "dateNasc": "",
       "password": ""
     }
-  ]
+  ],
+  "consultas":[{
+    "id": 2,
+    "data": "2024-06-11",
+    "horario": "10:30",
+    "especialidade": "Dermatologia",
+    "nome-medico": "Dra. Maria Silva",
+    "observacao": "Exame de manchas na pele"
+
+  }]
 }
