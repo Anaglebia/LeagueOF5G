@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainErrorPage = styled.div`
-  border: solid purple;
+  /* border: solid purple; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
