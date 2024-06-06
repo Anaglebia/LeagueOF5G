@@ -1,23 +1,51 @@
-import { useAuth } from '@clerk/clerk-react';
+import { useSignIn } from '@clerk/clerk-react';
+import React, { useState } from 'react';
 
-export default function ExternalDataPage() {
-  const { getToken, isLoaded, isSignedIn } = useAuth();
+const Login = () => {
+  const { signIn } = useSignIn();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
 
-  if (!isLoaded) {
-    // Handle loading state however you like
-    return <div>Loading...</div>;
-  }
+  const handleSignIn = async (event) => {
+    event.preventDefault();
+    try {
+      await signIn.create({
+        identifier: email,
+        password,
+      });
+    } catch (err) {
+      setError(err.errors[0].message);
+    }
+  };
 
-  if (!isSignedIn) {
-    // Handle signed out state however you like
-    return <div>Sign in to view this page</div>;
-  }
-
-  const fetchDataFromExternalResource = async () => {
-    const token = await getToken();
-    // Add logic to fetch your data
-    return data;
-  }
-
-  return <div>...</div>;
+  return (
+    <div>
+      <h2>Login</h2>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <form onSubmit={handleSignIn}>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
 }
+
+export default Login
