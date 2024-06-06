@@ -10,8 +10,11 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <div>
+
       <Navbar />
       <Outlet />
+      </div>
       
     </>
   );

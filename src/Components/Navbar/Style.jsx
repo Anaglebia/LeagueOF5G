@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 250px;
@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 1000;
+  z-index: 1000; */
 
   img {
     width: 90%;

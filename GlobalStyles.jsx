@@ -1,11 +1,18 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #f2f5f7;
+   
+  }
+
+  div {
+     display: flex;
+    flex-direction: row;
+
+    width: 20%;
   }
 `;
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+
 
 import imgError from "./error.jpg"
 
@@ -19,7 +19,6 @@ const ErrorPage = () => {
           <Link to="/">Back to Home</Link>
         </S.LinkBackHome>
       </S.MainErrorPage>
-      <Footer />
     </div>
   );
 };
