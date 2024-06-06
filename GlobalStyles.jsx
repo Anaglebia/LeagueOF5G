@@ -8,12 +8,6 @@ const GlobalStyles = createGlobalStyle`
    
   }
 
-  div {
-     display: flex;
-    flex-direction: row;
-
-    width: 20%;
-  }
 `;
 
 export default GlobalStyles;

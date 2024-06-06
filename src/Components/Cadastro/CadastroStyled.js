@@ -4,7 +4,7 @@ export const Div = styled.div`
 width: 80%;
 height: 80vh;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 background: #f6f6f6;
