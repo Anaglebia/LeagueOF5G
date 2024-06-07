@@ -17,11 +17,15 @@ export const MainTodasConsultas = styled.main`
   flex-direction: column;
   align-items: center;
 
+  max-height: 80%;
+  overflow-x: auto;
+  overflow-y: auto;
+
   h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
-    color:#2e14a2;
+    color: #2e14a2;
   }
 
   table {
@@ -32,6 +36,9 @@ export const MainTodasConsultas = styled.main`
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     overflow: hidden;
+
+    width: 100%;
+    border-collapse: collapse;
   }
 
   th,
@@ -39,7 +46,7 @@ export const MainTodasConsultas = styled.main`
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     text-align: left;
-    color: #2e14a2; 
+    color: #2e14a2;
   }
 
   th {
