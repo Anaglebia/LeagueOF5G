@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+import * as S from "./Style";
+
 const TodasConsultas = () => {
   const [consultas, setConsultas] = useState([]);
 
@@ -17,39 +19,38 @@ const TodasConsultas = () => {
   }, []);
 
   return (
-    <div>
+    <S.MainTodasConsultas>
       <h2>Relatório de Consultas</h2>
 
-      {consultas.length > 0 ? (
-        consultas.map((consulta) => (
-          <div key={consulta.id}>
-            <table>
-              <tr>
-                <td>Data: {consulta.data}</td>
-                <td>Horário: {consulta.horario}</td>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Horário</th>
+            <th>Especialidade</th>
+            <th>Nome do Médico</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          {consultas.length > 0 ? (
+            consultas.map((consulta) => (
+              <tr key={consulta.id}>
+                <td>{consulta.data}</td>
+                <td>{consulta.horario}</td>
+                <td>{consulta.especialidade}</td>
+                <td>{consulta["nome-medico"]}</td>
+                <td>{consulta.observacao}</td>
               </tr>
-              <tr>
-                <td>Especialidade: {consulta.especialidade}</td>
-              </tr>
-              <tr>
-                <td>Nome do Médico: {consulta["nome-medico"]}</td>
-              </tr>
-              <tr>
-                <td>Observação: {consulta.observacao}</td>
-              </tr>
-            </table>
-            {/* <p>Data: {consulta.data}</p>
-            <p>Horário: {consulta.horario}</p>
-            <p>Especialidade: {consulta.especialidade}</p>
-            <p>Nome do Médico: {consulta["nome-medico"]}</p>
-            <p>Observação: {consulta.observacao}</p>
-            <hr /> */}
-          </div>
-        ))
-      ) : (
-        <p>Carregando consultas...</p>
-      )}
-    </div>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="5">Nenhuma consulta encontrada</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </S.MainTodasConsultas>
   );
 };
 
