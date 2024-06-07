@@ -20,6 +20,7 @@ if (!PUBLISHABLE_KEY) {
 import Cadastro from "./Components/Cadastro/Cadastro.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 import AgendarConsulta from "./Components/Consulta/AgendarConsulta.jsx";
+import CancelarConsulta from "./Components/Consulta/DeletarConsulta.jsx"
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/agendar",
         element: <AgendarConsulta />
+      },
+      {
+        path: "/cancelar",
+        element: <CancelarConsulta />
       },
     ],
   },

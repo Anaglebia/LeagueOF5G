@@ -46,7 +46,7 @@ const Navbar = () => {
               <Link to="/agendar" onClick={closeMenu}><FaInfo />Agendar</Link>
             </li>
             <li>
-              <Link to="/#" onClick={closeMenu}><FaPhone /> Contato</Link>
+              <Link to="/cancelar" onClick={closeMenu}><FaPhone /> Cancelar</Link>
             </li>
           </SignedIn>
         </ul>

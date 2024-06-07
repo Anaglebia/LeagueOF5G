@@ -13,7 +13,6 @@ const AgendarConsulta = () => {
   function onSubmit(data) {
     api.post("/consultas", data);
     console.log(data);
-    // navigate("/Dashboard");
     reset();
   }
 
