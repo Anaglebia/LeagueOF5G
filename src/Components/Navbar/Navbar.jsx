@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import Imagem from '../Navbar/Lo.png';
-import { FaHome, FaInfo,FaUser,FaPhone, FaStethoscope, FaCalendarCheck, FaBars } from 'react-icons/fa';
+import { FaHome, FaInfo,FaUser,FaPhone, FaStethoscope, FaCalendarCheck, FaBars,FaIdBadge } from 'react-icons/fa';
 import * as S from './Style';
 
 const Navbar = () => {
@@ -39,12 +39,15 @@ const Navbar = () => {
             <li>
               <Link to="/cadastro" onClick={closeMenu}><FaUser /> Perfil </Link>
             </li>
+
+            <li>
+              <Link to="/agendar" onClick={closeMenu}><FaIdBadge /> Agendar</Link>
+            </li>
+
             <li>
               <Link to="/consultas" onClick={closeMenu}><FaCalendarCheck /> Consultas</Link>
             </li>
-            <li>
-              <Link to="/agendar" onClick={closeMenu}><FaInfo />Agendar</Link>
-            </li>
+           
             {/* <li>
               <Link to="/cancelar" onClick={closeMenu}><FaPhone /> Cancelar</Link>
             </li> */}

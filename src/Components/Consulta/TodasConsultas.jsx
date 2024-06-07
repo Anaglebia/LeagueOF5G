@@ -1,3 +1,4 @@
+import { FaTimes  } from 'react-icons/fa'; // Importe o ícone de lixeira
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -19,7 +20,6 @@ const TodasConsultas = () => {
       console.error(error);
     }
   };
-
 
   async function handleCancelarConsulta(id) {
     axios
@@ -61,7 +61,10 @@ const TodasConsultas = () => {
                   <td>{consulta["nomeMedico"]}</td>
                   <td>{consulta.observacao}</td>
                   <td>
-                    <button onClick={() => handleCancelarConsulta(consulta.id)} >Cancelar</button>
+                    <button onClick={() => handleCancelarConsulta(consulta.id)} >
+                    <FaTimes /> {/* Ícone de lixeira */}
+                      Cancelar
+                    </button>
                   </td>
                 </tr>
               ))

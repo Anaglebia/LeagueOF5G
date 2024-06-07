@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
-
 export const MainConsultas = styled.div`
   display: flex;
   flex-direction: column;
-`
+  align-items: center;
+`;
+
 export const MainTodasConsultas = styled.main`
-  width: 95%;
+  width: 90%;
+  max-width: 1200px; /* Largura máxima */
   height: 80vh;
-  margin-top: 5%;
-  margin-right: 5%;
+  margin: 5% auto; /* Margem superior e inferior 5%, e centralizado horizontalmente */
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -21,8 +22,6 @@ export const MainTodasConsultas = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  max-height: 80%;
   overflow-x: auto;
   overflow-y: auto;
 
@@ -41,9 +40,6 @@ export const MainTodasConsultas = styled.main`
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     overflow: hidden;
-
-    width: 100%;
-    border-collapse: collapse;
   }
 
   th,
@@ -65,6 +61,17 @@ export const MainTodasConsultas = styled.main`
   tbody tr:last-child td {
     border-bottom: none;
   }
-  
-`;
 
+  /* Media Query para ajustar o estilo em telas menores */
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    margin: 10% auto;
+  }
+
+  /* Media Query para ajustar o estilo em telas de celular */
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+`;

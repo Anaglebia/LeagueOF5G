@@ -1,14 +1,6 @@
 {
   "consultas": [
     {
-      "id": "5",
-      "dataConsulta": "2024-06-14",
-      "horario": "08:00",
-      "especialidade": "Oftalmologia",
-      "nomeMedico": "Dr. Pedro Santos",
-      "observacao": "Exame de vista"
-    },
-    {
       "id": "6",
       "dataConsulta": "2024-06-15",
       "horario": "11:15",

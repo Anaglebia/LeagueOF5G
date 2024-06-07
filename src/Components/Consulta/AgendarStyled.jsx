@@ -19,12 +19,16 @@ export const Container = styled.div`
   @media (max-width: 1024px) {
     width: 80%;
     margin-top:1rem;
+     backdrop-filter: none; /* Removendo o efeito de desfoque em telas menores */
+    -webkit-backdrop-filter: none;
   }
   }
 
   @media (max-width: 768px) {
     width: 90%;
     padding: 1.5rem;
+     backdrop-filter: none; /* Removendo o efeito de desfoque em telas menores */
+    -webkit-backdrop-filter: none;
     
   }
 
