@@ -5,8 +5,8 @@ import * as S from './Style';
 const Home = () => {
   return (
       <S.GlassContainer>
-        <h1>Bem Vindo</h1> 
-        <img src="homee.png" alt="Imagem da Home" /> 
+        <h1>Seja Bem vindo(a)</h1> 
+        <img src="home oficial.png" alt="Imagem da Home" /> 
       </S.GlassContainer>
   );
 };

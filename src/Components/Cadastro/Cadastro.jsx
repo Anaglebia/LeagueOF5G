@@ -4,15 +4,7 @@ import * as S from "./CadastroStyled";
 import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
-  // const {register, handleSubmit, reset} = useForm({
-  // })
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   function Create(data) {
@@ -22,85 +14,53 @@ function Cadastro() {
   }
 
   return (
-    <>
-      <S.Div>
-      <h1>Cadastro</h1>
-        <S.Form onSubmit={handleSubmit(Create)}>
-          <div>
-            <S.Label>
-              Primeiro nome{" "}
-              <S.Input className="w3-input" type="text" id="nome" name="nome" {...register("nome")} />
-            </S.Label>
-            {errors.nome && <p>Favor preencher o nome .</p>}
+    <S.Container>
+      <S.Title>Cadastro</S.Title>
+      <S.Form onSubmit={handleSubmit(Create)}>
+        <S.Fieldset>
+          <S.Label>
+            Primeiro nome
+            <S.Input type="text" id="nome" name="nome" {...register("nome", { required: true })} />
+          </S.Label>
+          {errors.nome && <S.ErrorMessage>Favor preencher o nome.</S.ErrorMessage>}
 
-            <S.Label>
-              Ultimo nome{" "}
-              <S.Input
-              className="w3-input"
-                type="text"
-                id="Unome"
-                name="Unome"
-                {...register("Unome")}
-              />
-            </S.Label>
-            {errors.unome && <p>Favor preencher o sobrenome .</p>}
-          </div>
-          <div>
-            <S.Label>
-              Email{" "}
-              <S.Input
-              className="w3-input"
-                type="email"
-                id="email"
-                name="email"
-                {...register("email")}
-              />
-            </S.Label>
-            {errors.unome && <p>O campo email e obrigatorio .</p>}
+          <S.Label>
+            Sobrenome
+            <S.Input type="text" id="Unome" name="Unome" {...register("Unome", { required: true })} />
+          </S.Label>
+          {errors.Unome && <S.ErrorMessage>Favor preencher o sobrenome.</S.ErrorMessage>}
+        </S.Fieldset>
 
-            <S.Label>
-              Telefone{" "}
-              <S.Input
-              className="w3-input"
-                type="tel"
-                id="phone"
-                name="phone"
-                {...register("phone")}
-              />
-            </S.Label>
-            {errors.unome && <p>O campo telefone e obrigatorio .</p>}
+        <S.Fieldset>
+          <S.Label>
+            Email
+            <S.Input type="email" id="email" name="email" {...register("email", { required: true })} />
+          </S.Label>
+          {errors.email && <S.ErrorMessage>O campo email é obrigatório.</S.ErrorMessage>}
 
-            <S.Label>
-              Data de Nascimento
-              <S.Input
-                className="w3-input"
-                type="date"
-                id="dateNasc"
-                name="dateNasc"
-                {...register("dateNasc")}
-              />
-            </S.Label>
-            {errors.unome && <p>Favor a data de nascimento corretamente .</p>}
-            <S.Label>
-              Endereço
-              <S.Input
-                className="w3-input"
-                type="text"
-                id="end"
-                name="end"
-                {...register("end")}
-              />
-            </S.Label>
-          </div>
+          <S.Label>
+            Telefone
+            <S.Input type="tel" id="phone" name="phone" {...register("phone", { required: true })} />
+          </S.Label>
+          {errors.phone && <S.ErrorMessage>O campo telefone é obrigatório.</S.ErrorMessage>}
+        </S.Fieldset>
 
-         
+        <S.Fieldset>
+          <S.Label>
+            Data de Nascimento
+            <S.Input type="date" id="dateNasc" name="dateNasc" {...register("dateNasc", { required: true })} />
+          </S.Label>
+          {errors.dateNasc && <S.ErrorMessage>Favor preencher a data de nascimento corretamente.</S.ErrorMessage>}
 
-          
+          <S.Label>
+            Endereço
+            <S.Input type="text" id="end" name="end" {...register("end")} />
+          </S.Label>
+        </S.Fieldset>
 
-          <S.Button>Enviar </S.Button>
-        </S.Form>
-      </S.Div>
-    </>
+        <S.Button type="submit">Enviar</S.Button>
+      </S.Form>
+    </S.Container>
   );
 }
 
