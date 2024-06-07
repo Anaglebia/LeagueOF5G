@@ -21,3 +21,4 @@
 Certifique-se de ter instalado em sua máquina:
 - Node.js
 - npm (geralmente é instalado junto com o Node.js)
+- npm run server
