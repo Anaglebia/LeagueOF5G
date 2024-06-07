@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const MainErrorPage = styled.div`
-  /* border: solid purple; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: solid red; */
 
   width: 100%;
   height: 100%;
