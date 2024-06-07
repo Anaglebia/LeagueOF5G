@@ -40,9 +40,10 @@ export const Nav = styled.nav`
     gap: 0.5rem;
   }
 
-  .nav-logo {
-    width: 60%;
-    margin: auto;
+   .nav-logo {
+    width: 80%;
+    margin-top: 120%; /* Adiciona margem no topo para empurrar a imagem para baixo */
+    align-self: flex-start; /* Centraliza horizontalmente a imagem */
   }
 
   &:hover {
