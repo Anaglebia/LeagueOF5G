@@ -36,6 +36,9 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    &:hover {
+      color: #195aa0;
+    }
   }
 
   .nav-logo {
@@ -44,9 +47,7 @@ export const Nav = styled.nav`
     align-self: center; 
   }
 
-  &:hover {
-    color: #195aa0;
-  }
+ 
 
   svg {
     color: #195aa0;
