@@ -45,9 +45,9 @@ const Navbar = () => {
             <li>
               <Link to="/agendar" onClick={closeMenu}><FaInfo />Agendar</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/cancelar" onClick={closeMenu}><FaPhone /> Cancelar</Link>
-            </li>
+            </li> */}
           </SignedIn>
         </ul>
         <img src={Imagem} alt="logo" className="nav-logo" />

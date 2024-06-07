@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
+
+export const MainConsultas = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 export const MainTodasConsultas = styled.main`
-  width: 70%;
+  width: 95%;
   height: 80vh;
   margin-top: 5%;
   margin-right: 5%;

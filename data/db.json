@@ -1,22 +1,6 @@
 {
   "consultas": [
     {
-      "id": "3",
-      "dataConsulta": "2024-06-12",
-      "horario": "14:00",
-      "especialidade": "Ortopedia",
-      "nomeMedico": "Dr. Carlos Souza",
-      "observacao": "Avaliação de dor no joelho"
-    },
-    {
-      "id": "4",
-      "dataConsulta": "2024-06-13",
-      "horario": "15:45",
-      "especialidade": "Pediatria",
-      "nomeMedico": "Dra. Ana Pereira",
-      "observacao": "Consulta de acompanhamento"
-    },
-    {
       "id": "5",
       "dataConsulta": "2024-06-14",
       "horario": "08:00",
