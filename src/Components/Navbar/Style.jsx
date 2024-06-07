@@ -17,10 +17,8 @@ export const Nav = styled.nav`
 
   ul {
     margin-top: 2rem;
-    height: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
     background: none;
   }
@@ -40,10 +38,10 @@ export const Nav = styled.nav`
     gap: 0.5rem;
   }
 
-   .nav-logo {
+  .nav-logo {
     width: 80%;
-    margin-top: 120%; /* Adiciona margem no topo para empurrar a imagem para baixo */
-    align-self: flex-start; /* Centraliza horizontalmente a imagem */
+    margin-top: 100%; /* Adiciona margem no topo para empurrar a imagem para baixo */
+    align-self: center; /* Centraliza horizontalmente a imagem */
   }
 
   &:hover {
@@ -70,9 +68,6 @@ export const Nav = styled.nav`
 export const DivImg = styled.div`
   img {
     width: 100%;
-  }
-
-
   }
 `;
 
