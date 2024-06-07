@@ -1,16 +1,14 @@
-import * as S from "./Style";
+import * as S from "./AgendarStyled";
 import { api } from "../../lib/axios";
 import { useForm } from "react-hook-form";
 
-import React from "react";
-
 const AgendarConsulta = () => {
-  const { register, handleSubmit, reset } = useForm();
-
-  // const onSubmit = (e) => {
-
-  //   console.log(e);
-  // };
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   function onSubmit(data) {
     api.post("/consultas", data);
@@ -20,28 +18,46 @@ const AgendarConsulta = () => {
   }
 
   return (
-    <div>
-      <h2>Agendar Consulta</h2>
+    <S.Container>
+      <S.Title>Agendar Consulta</S.Title>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="dataConsulta">Data</label>
-        <input type="text" {...register("dataConsulta")} />
+      <S.Form onSubmit={handleSubmit(onSubmit)}>
+        <S.Label htmlFor="dataConsulta">Data</S.Label>
+        <S.Input
+          type="date"
+          {...register("dataConsulta", { required: true })}
+        />
+        {errors.dataConsulta && (
+          <S.ErrorMessage>Favor preencher a data da consulta.</S.ErrorMessage>
+        )}
 
         <label htmlFor="horario">Horario</label>
-        <input type="text" {...register("horario")} />
+        <S.Input type="time" {...register("horario", { required: true })} />
+        {errors.horario && (
+          <S.ErrorMessage>Favor preencher o horário.</S.ErrorMessage>
+        )}
 
         <label htmlFor="especialidade">Especialidade</label>
-        <input type="text" {...register("especialidade")} />
+        <S.Input
+          type="text"
+          {...register("especialidade", { required: true })}
+        />
+        {errors.especialidade && (
+          <S.ErrorMessage>Favor preencher a especialidade.</S.ErrorMessage>
+        )}
 
-        <label htmlFor="nome-medico">Nome Médico</label>
-        <input type="text" {...register("nome-medico")} />
+        <label htmlFor="nomeMedico">Nome Médico</label>
+        <S.Input type="text" {...register("nomeMedico", { required: true })} />
+        {errors.nomeMedico && (
+          <S.ErrorMessage>Favor preencher o nome do médico.</S.ErrorMessage>
+        )}
 
         <label htmlFor="observacao">Observação</label>
-        <input type="text" {...register("observacao")} />
+        <S.Input type="text" {...register("observacao")} />
 
         <button type="submit">Enviar</button>
-      </form>
-    </div>
+      </S.Form>
+    </S.Container>
   );
 };
 

@@ -60,4 +60,6 @@ export const MainTodasConsultas = styled.main`
   tbody tr:last-child td {
     border-bottom: none;
   }
+  
 `;
+

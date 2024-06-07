@@ -39,7 +39,7 @@ const TodasConsultas = () => {
                 <td>{consulta.dataConsulta}</td>
                 <td>{consulta.horario}</td>
                 <td>{consulta.especialidade}</td>
-                <td>{consulta["nome-medico"]}</td>
+                <td>{consulta["nomeMedico"]}</td>
                 <td>{consulta.observacao}</td>
               </tr>
             ))
