@@ -17,10 +17,8 @@ export const Nav = styled.nav`
 
   ul {
     margin-top: 2rem;
-    height: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
     background: none;
   }
@@ -41,8 +39,9 @@ export const Nav = styled.nav`
   }
 
   .nav-logo {
-    width: 60%;
-    margin: auto;
+    width: 80%;
+    margin-top: 100%; 
+    align-self: center; 
   }
 
   &:hover {
@@ -73,9 +72,6 @@ export const Nav = styled.nav`
 export const DivImg = styled.div`
   img {
     width: 100%;
-  }
-
-
   }
 `;
 

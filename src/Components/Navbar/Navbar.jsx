@@ -37,7 +37,7 @@ const Navbar = () => {
               <Link to="/" onClick={closeMenu}><FaHome /> Home</Link>
             </li>
             <li>
-              <Link to="/cadastro" onClick={closeMenu}><FaStethoscope /> Portal do Paciente</Link>
+              <Link to="/cadastro" onClick={closeMenu}><FaStethoscope /> Perfil do Paciente</Link>
             </li>
             <li>
               <Link to="consultas" onClick={closeMenu}><FaCalendarCheck /> Consultas</Link>
