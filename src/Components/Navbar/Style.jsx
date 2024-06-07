@@ -40,8 +40,8 @@ export const Nav = styled.nav`
 
   .nav-logo {
     width: 80%;
-    margin-top: 100%; /* Adiciona margem no topo para empurrar a imagem para baixo */
-    align-self: center; /* Centraliza horizontalmente a imagem */
+    margin-top: 100%; 
+    align-self: center; 
   }
 
   &:hover {
