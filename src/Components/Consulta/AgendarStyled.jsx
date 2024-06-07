@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 95vh; /* Ajuste a altura aqui */
+  height: 95vh;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -15,18 +15,57 @@ export const Container = styled.div`
   padding: 2rem;
   width: 60%;
   margin: auto;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    margin-top:1rem;
+  }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 1.5rem;
+    
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 1rem;
+     backdrop-filter: none; /* Removendo o efeito de desfoque em telas menores */
+    -webkit-backdrop-filter: none; 
+  }
 `;
 
 export const Title = styled.h1`
   color: #2e14a2;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Label = styled.label`
@@ -42,8 +81,12 @@ export const Input = styled.input`
   background: rgba(255, 255, 255, 0.2);
   color: #140850;
   font-size: 1rem;
+
   ::placeholder {
     color: #ddd;
+  }
+
+ 
   }
 `;
 
@@ -51,6 +94,7 @@ export const ErrorMessage = styled.span`
   color: #ff6b6b;
   margin-bottom: 1rem;
 `;
+
 
 export const Button = styled.button`
   --color: #fff;

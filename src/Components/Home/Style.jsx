@@ -17,6 +17,11 @@ export const GlassContainer = styled.div`
   padding: 20px;
   text-align: center;
   
+    @media (max-width: 500px) {
+    width:100%;
+    height: 100vh;
+   
+  }
 
   h1 {
     font-size: 2.5rem;
