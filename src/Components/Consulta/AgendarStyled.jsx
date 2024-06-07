@@ -5,13 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh; /* Ajuste a altura aqui */
+  height: 95vh; /* Ajuste a altura aqui */
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 2rem;
   width: 60%;
   margin: auto;
@@ -84,7 +84,7 @@ export const Button = styled.button`
   background: var(--bg, var(--background));
   width: 50%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 0,5rem;
    
 
   & > div {
