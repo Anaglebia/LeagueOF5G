@@ -42,6 +42,12 @@ const Navbar = () => {
           <li>
             <Link to="consultas">
               <FaCalendarCheck /> Consultas
+              <ul>
+                <li><Link to="/Agendar">Agendar</Link></li>
+                <li><Link to="/Remarcar">Remarcar</Link></li>
+                <li><Link to="/Cancelar">Cancelar</Link></li>
+                <li><Link to="/Relatório">Relatório</Link></li>
+              </ul>
             </Link>
           </li>
         </SignedIn>

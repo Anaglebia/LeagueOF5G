@@ -26,6 +26,10 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
   }
+
+  li {
+    list-style-type: none;
+  }
 `;
 
 export const DivImg = styled.div`
