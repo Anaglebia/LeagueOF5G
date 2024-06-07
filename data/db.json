@@ -1,164 +1,180 @@
 {
   "consultas": [
     {
-      "id": 1,
-      "data": "2024-06-10",
+      "id": "1",
+      "dataConsulta": "2024-06-10",
       "horario": "09:00",
       "especialidade": "Cardiologia",
       "nome-medico": "Dr. João Cardoso",
       "observacao": "Consulta de rotina"
     },
     {
-      "id": 2,
-      "data": "2024-06-11",
+      "id": "2",
+      "dataConsulta": "2024-06-11",
       "horario": "10:30",
       "especialidade": "Dermatologia",
       "nome-medico": "Dra. Maria Silva",
       "observacao": "Exame de manchas na pele"
     },
     {
-      "id": 3,
-      "data": "2024-06-12",
+      "id": "3",
+      "dataConsulta": "2024-06-12",
       "horario": "14:00",
       "especialidade": "Ortopedia",
       "nome-medico": "Dr. Carlos Souza",
       "observacao": "Avaliação de dor no joelho"
     },
     {
-      "id": 4,
-      "data": "2024-06-13",
+      "id": "4",
+      "dataConsulta": "2024-06-13",
       "horario": "15:45",
       "especialidade": "Pediatria",
       "nome-medico": "Dra. Ana Pereira",
       "observacao": "Consulta de acompanhamento"
     },
     {
-      "id": 5,
-      "data": "2024-06-14",
+      "id": "5",
+      "dataConsulta": "2024-06-14",
       "horario": "08:00",
       "especialidade": "Oftalmologia",
       "nome-medico": "Dr. Pedro Santos",
       "observacao": "Exame de vista"
     },
     {
-      "id": 6,
-      "data": "2024-06-15",
+      "id": "6",
+      "dataConsulta": "2024-06-15",
       "horario": "11:15",
       "especialidade": "Ginecologia",
       "nome-medico": "Dra. Julia Almeida",
       "observacao": "Check-up anual"
     },
     {
-      "id": 7,
-      "data": "2024-06-16",
+      "id": "7",
+      "dataConsulta": "2024-06-16",
       "horario": "13:30",
       "especialidade": "Psiquiatria",
       "nome-medico": "Dr. Rafael Lima",
       "observacao": "Consulta de acompanhamento"
     },
     {
-      "id": 8,
-      "data": "2024-06-17",
+      "id": "8",
+      "dataConsulta": "2024-06-17",
       "horario": "16:00",
       "especialidade": "Neurologia",
       "nome-medico": "Dra. Beatriz Costa",
       "observacao": "Avaliação de dores de cabeça"
     },
     {
-      "id": 9,
-      "data": "2024-06-18",
+      "id": "9",
+      "dataConsulta": "2024-06-18",
       "horario": "09:30",
       "especialidade": "Endocrinologia",
       "nome-medico": "Dr. Fernando Rocha",
       "observacao": "Controle de diabetes"
     },
     {
-      "id": 10,
-      "data": "2024-06-19",
+      "id": "10",
+      "dataConsulta": "2024-06-19",
       "horario": "14:45",
       "especialidade": "Urologia",
       "nome-medico": "Dr. Camila Martins",
       "observacao": "Exame de próstata"
     },
     {
-      "id": 1,
-      "data": "2024-06-10",
+      "id": "1",
+      "dataConsulta": "2024-06-10",
       "horario": "09:00",
       "especialidade": "Cardiologia",
       "nome-medico": "Dr. João Cardoso",
       "observacao": "Consulta de rotina"
     },
     {
-      "id": 2,
-      "data": "2024-06-11",
+      "id": "2",
+      "dataConsulta": "2024-06-11",
       "horario": "10:30",
       "especialidade": "Dermatologia",
       "nome-medico": "Dra. Maria Silva",
       "observacao": "Exame de manchas na pele"
     },
     {
-      "id": 3,
-      "data": "2024-06-12",
+      "id": "3",
+      "dataConsulta": "2024-06-12",
       "horario": "14:00",
       "especialidade": "Ortopedia",
       "nome-medico": "Dr. Carlos Souza",
       "observacao": "Avaliação de dor no joelho"
     },
     {
-      "id": 4,
-      "data": "2024-06-13",
+      "id": "4",
+      "dataConsulta": "2024-06-13",
       "horario": "15:45",
       "especialidade": "Pediatria",
       "nome-medico": "Dra. Ana Pereira",
       "observacao": "Consulta de acompanhamento"
     },
     {
-      "id": 5,
-      "data": "2024-06-14",
+      "id": "5",
+      "dataConsulta": "2024-06-14",
       "horario": "08:00",
       "especialidade": "Oftalmologia",
       "nome-medico": "Dr. Pedro Santos",
       "observacao": "Exame de vista"
     },
     {
-      "id": 6,
-      "data": "2024-06-15",
+      "id": "6",
+      "dataConsulta": "2024-06-15",
       "horario": "11:15",
       "especialidade": "Ginecologia",
       "nome-medico": "Dra. Julia Almeida",
       "observacao": "Check-up anual"
     },
     {
-      "id": 7,
-      "data": "2024-06-16",
+      "id": "7",
+      "dataConsulta": "2024-06-16",
       "horario": "13:30",
       "especialidade": "Psiquiatria",
       "nome-medico": "Dr. Rafael Lima",
       "observacao": "Consulta de acompanhamento"
     },
     {
-      "id": 8,
-      "data": "2024-06-17",
+      "id": "8",
+      "dataConsulta": "2024-06-17",
       "horario": "16:00",
       "especialidade": "Neurologia",
       "nome-medico": "Dra. Beatriz Costa",
       "observacao": "Avaliação de dores de cabeça"
     },
     {
-      "id": 9,
-      "data": "2024-06-18",
+      "id": "9",
+      "dataConsulta": "2024-06-18",
       "horario": "09:30",
       "especialidade": "Endocrinologia",
       "nome-medico": "Dr. Fernando Rocha",
       "observacao": "Controle de diabetes"
     },
     {
-      "id": 10,
-      "data": "2024-06-19",
+      "id": "10",
+      "dataConsulta": "2024-06-19",
       "horario": "14:45",
       "especialidade": "Urologia",
       "nome-medico": "Dr. Camila Martins",
       "observacao": "Exame de próstata"
+    },
+    {
+      "id": "9b5f",
+      "dataConsulta": "07/06/2024"
+    },
+    {
+      "id": "a6a1",
+      "dataConsulta": "10-01-2024"
+    },
+    {
+      "id": "071e",
+      "dataConsulta": "07/06/2024",
+      "horario": "10:25",
+      "especialidade": "Ginecologista",
+      "nome-medico": "Maria Betânia",
+      "observacao": "Exame de Gravidez"
     }
   ]
 }

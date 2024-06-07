@@ -36,7 +36,7 @@ const TodasConsultas = () => {
           {consultas.length > 0 ? (
             consultas.map((consulta) => (
               <tr key={consulta.id}>
-                <td>{consulta.data}</td>
+                <td>{consulta.dataConsulta}</td>
                 <td>{consulta.horario}</td>
                 <td>{consulta.especialidade}</td>
                 <td>{consulta["nome-medico"]}</td>

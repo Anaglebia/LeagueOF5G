@@ -17,8 +17,9 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
-import Cadastro from "./Components/Cadastro/Cadastro.jsx"
+import Cadastro from "./Components/Cadastro/Cadastro.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
+import AgendarConsulta from "./Components/Consulta/AgendarConsulta.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "Dashboard/:id",
         element: <Dashboard />,
+      },
+      {
+        path: "/agendar",
+        element: <AgendarConsulta />
       },
     ],
   },

@@ -40,10 +40,10 @@ const Navbar = () => {
               <Link to="/cadastro" onClick={closeMenu}><FaUser /> Perfil </Link>
             </li>
             <li>
-              <Link to="consultas" onClick={closeMenu}><FaCalendarCheck /> Consultas</Link>
+              <Link to="/consultas" onClick={closeMenu}><FaCalendarCheck /> Consultas</Link>
             </li>
             <li>
-              <Link to="/#" onClick={closeMenu}><FaInfo /> Sobre</Link>
+              <Link to="/agendar" onClick={closeMenu}><FaInfo />Agendar</Link>
             </li>
             <li>
               <Link to="/#" onClick={closeMenu}><FaPhone /> Contato</Link>
